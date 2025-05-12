@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BetLimitSummary from "./pages/BetLimitSummary/BetLimitSummary";
-import "./index.css";
+import "./styles/index.css";
 
 function App() {
   return (

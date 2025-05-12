@@ -15,7 +15,7 @@ type BetLimitCardProps = {
 
 const BetLimitCard = ({ title, maxLimit, rows }: BetLimitCardProps) => {
   return (
-    <div className="w-full rounded-xl shadow-md border border-[var(--color-lightGray)] p-4 text-[var(--color-textColor)] space-y-2">
+    <div className="w-full h-full rounded-xl shadow-md border border-[var(--color-lightGray)] p-4 text-[var(--color-textColor)] space-y-2">
       <div>
         <h2 className="text-xl font-semibold">{title}</h2>
         <p className="text-sm text-[var(--color-textColor)] font-light">
@@ -42,11 +42,25 @@ const BetLimitCard = ({ title, maxLimit, rows }: BetLimitCardProps) => {
               <td className="p-2 font-normal">{row.min}</td>
               <td className="p-2 font-normal">{row.max}</td>
               <td className="p-2 font-normal">{row.payout}</td>
-              <td className="p-2 font-normal text-green-500 flex items-center gap-1">
+              <td
+                className={`p-2 font-normal flex items-center gap-1 ${
+                  row.min === 0 && row.max === 0 && row.payout === 0
+                    ? "text-red-400"
+                    : "text-emerald-500"
+                }`}
+              >
                 {row.status}
                 <Icon
-                  icon="mdi:check-circle"
-                  className="text-green-500 w-4 h-4"
+                  icon={
+                    row.min === 0 && row.max === 0 && row.payout === 0
+                      ? "mdi:close-circle"
+                      : "mdi:check-circle"
+                  }
+                  className={`w-4 h-4 ${
+                    row.min === 0 && row.max === 0 && row.payout === 0
+                      ? "text-red-400"
+                      : "text-emerald-500"
+                  }`}
                 />
               </td>
             </tr>
