@@ -21,13 +21,13 @@ const LimitedNumber = ({
   rows,
 }: LimitDetailCardProps) => {
   return (
-    <div className="w-full rounded-xl shadow-md border border-[var(--color-lightGray)] p-6 space-y-6">
+    <div className="w-full rounded-xl shadow-md border border-[var(--gray-light)] p-6 space-y-6">
       {/* Header */}
       <div>
-        <h2 className="text-xl font-semibold text-[var(--color-textColor)]">
+        <h2 className="text-xl font-semibold text-[var(--text)]">
           {limitTitle}
         </h2>
-        <p className="text-sm text-[var(--color-textColor)]">
+        <p className="text-sm text-[var(--text)]">
           Maximum Limit : {maxLimit}
         </p>
       </div>
@@ -37,7 +37,7 @@ const LimitedNumber = ({
         {types.map((type, index) => (
           <button
             key={index}
-            className="px-4 py-1 bg-[var(--color-bgColor)] text-sm rounded-full text-[var(--color-textColor)] border border-[var(--color-LightGray)]"
+            className="px-4 py-1 bg-[var(--background)] text-sm rounded-full text-[var(--text)] border border-[var(--gray-light)]"
           >
             {type}
           </button>
@@ -48,7 +48,7 @@ const LimitedNumber = ({
       <div className="overflow-x-auto">
         <table className="min-w-full text-sm text-left">
           <thead>
-            <tr className="text-[var(--color-textColor)] font-normal border-t border-[var(--color-lightGray)]">
+            <tr className="text-[var(--text)] font-normal border-t border-[var(--gray-light)]">
               <th className="py-2 font-medium">Range Min</th>
               <th className="py-2 font-medium">Max Limit</th>
               <th className="py-2 font-medium">Payout %</th>
@@ -63,7 +63,7 @@ const LimitedNumber = ({
               return (
                 <tr
                   key={i}
-                  className="text-[var(--color-textColor)] border-t border-[var(--color-lightGray)]"
+                  className="text-[var(--text)] border-t border-[var(--gray-light)]"
                 >
                   <td className="py-2">{row.min}</td>
                   <td className="py-2">{row.max}</td>

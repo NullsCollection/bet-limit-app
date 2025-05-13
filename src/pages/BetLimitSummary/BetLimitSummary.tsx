@@ -61,25 +61,32 @@ const BetLimitSummary = () => {
   ];
 
   return (
-    <main className="bg-[var(--color-bgColor)] w-full min-h-screen py-6">
+    <main className="bg-[var(--background)] text-[var(--text)] w-full min-h-screen py-6">
       <div className="container max-w-7xl mx-auto px-4 py-4 ">
         <Navbar />
       </div>
-      <div className="container max-w-7xl mx-auto px-4 py-4 ">
-        <p className="text-[var(--color-textColor)] text-sm py-4">
-          <span className="text-[var(--color-violet)]">Limit number set </span>/
-          View limit number set
-        </p>
+      <div className="container max-w-7xl mx-auto px-4 py-4">
+        <div className="w-full flex justify-between items-center text-sm py-4">
+          <div className="text-[var(--text)]">
+            <span className="text-[var(--primary)]">Limit number set </span>/
+            View limit number set
+          </div>
+          <div>
+            <a href="/input-pages" className="text-[var(--primary)] hover:underline">
+              Goto Input Pages →
+            </a>
+          </div>
+        </div>
       </div>
 
       <div className="container max-w-7xl mx-auto px-4">
-        <div className="p-4 sm:p-4 bg-white border border-[var(--color-lightGray)] shadow-md rounded-xl">
-          <p className="text-md sm:text-lg text-[var(--color-textColor)] font-bold mb-6">
+        <div className="p-4 sm:p-4 bg-[var(--surface)] border border-[var(--gray-light)] shadow-md rounded-xl">
+          <p className="text-md sm:text-lg text-[var(--text)] font-bold mb-6">
             Limit Number Set
           </p>
           {/*Bet Limit Cards*/}
-          <div className="p-4 sm:p-4 border border-[var(--color-lightGray)] shadow-md rounded-xl">
-            <p className="text-md sm:text-lg text-[var(--color-textColor)] font-semibold mb-6">
+          <div className="p-4 sm:p-4 border border-[var(--gray-light)] shadow-md rounded-xl">
+            <p className="text-md sm:text-lg text-[var(--text)] font-semibold mb-6">
               Name :
             </p>
 

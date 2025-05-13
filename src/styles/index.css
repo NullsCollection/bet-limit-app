@@ -3,26 +3,24 @@
 :root {
   font-family: Poppins, sans-serif;
 
-  /* Light Theme Colors */
-  --color-violet: #7367f0;
-  --color-lightViolet: #9d93ff;
-  --color-textColor: #5d5a68;
-  --color-bgColor: #f2f2f2;
-  --color-lightGray: #cecece;
-
-  /* Dark Theme Colors */
-  --color-dark-bg: #25293c;
-  --color-dark-secondary: #2f3349;
-  --color-dark-text: #a5b0cc;
-  --color-dark-text-light: #d0daf4;
+  /* Default / Light Theme */
+  --primary: #7367f0;
+  --primary-light: #9d93ff;
+  --text: #5d5a68;
+  --background: #f2f2f2;
+  --gray-light: #cecece;
+  --surface: #ffffff;
 }
 
-body {
-  /*
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-  */
+/* Dark Theme Overrides */
+.theme-dark {
+  --background: #25293c;
+  --surface: #2f3349;
+  --text: #a5b0cc;
+  --gray-light: #d0daf4;
+}
+
+body,
+html {
+  transition: background-color 0.6s ease, color 0.6s ease;
 }
