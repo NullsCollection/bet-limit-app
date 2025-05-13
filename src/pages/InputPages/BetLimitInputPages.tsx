@@ -1,32 +1,8 @@
 import Navbar from "../../components/navigation/Navbar";
 import { Icon } from "@iconify/react";
-import Accordion from "../../components/common/Accordion";
 import LimitRangeCard from "../../components/form/LimitRangeCard";
 
 const BetLimitInputPages = () => {
-  const limitSets = [
-    {
-      title: "Three Top",
-      maxLimit: "5001",
-      ranges: [
-        { min: "101", max: "1000", payout: "80" },
-        { min: "101", max: "2000", payout: "60" },
-        { min: "101", max: "3000", payout: "50" },
-      ],
-    },
-    {
-      title: "Two Top",
-      maxLimit: "",
-      ranges: [],
-    },
-    {
-      title: "Run Top",
-      maxLimit: "5001",
-      ranges: [{ min: "1000", max: "5000", payout: "50" }],
-    },
-    // Add more sets...
-  ];
-
   return (
     <main className="bg-[var(--background)] text-[var(--text)] w-full min-h-screen py-6">
       <div className="container max-w-7xl mx-auto px-4 py-4">
