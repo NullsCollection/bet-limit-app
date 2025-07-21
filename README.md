@@ -1,54 +1,45 @@
-# React + TypeScript + Vite
+# Super Admin – Bet Limit Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Proposal Project | React + TypeScript + Vite**
 
-Currently, two official plugins are available:
+A modern, scalable dashboard for Super Admins to manage bet limits with ease and efficiency.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- React 19 (with Fast Refresh)
+- TypeScript (type-safe, scalable)
+- Vite (blazing fast dev/build tool)
+- ESLint (strict & type-aware config)
+- (Optional) eslint-plugin-react-x, eslint-plugin-react-dom
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 💡 Notes
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- This project is a proposal/sample for Super Admin Bet Limit Management.
+- All code is modern and easy to maintain.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+---
+
+## ✨ Features
+
+- **Bet Limit Management:** Add, edit, or remove bet limits per game and user tier.
+- **Responsive UI:** Seamless experience on desktop and mobile.
+- **Role-Based Access:** Super Admin access for sensitive features.
+- **Fast & Modern Codebase:** Built with latest React, TypeScript, and Vite.
+- **Customizable & Extendable:** Easy to integrate and update.
+
+---
+
+## 🛠️ Getting Started
+
+```bash
+git clone https://github.com/your-username/bet-limit-superadmin.git
+cd bet-limit-superadmin
+npm install
+npm run dev
+
+
+
